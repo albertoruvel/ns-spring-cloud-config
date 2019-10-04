@@ -1,0 +1,19 @@
+spring:
+  rabbitmq:
+    host: 192.168.99.100
+    port: 5672
+    username: guest
+    password: guest
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/ns_task?serverTimezone=UTC
+    username: root
+    password: root
+
+getProductsQueue: get_products
+createProductQueue: create_product
+getProductsResponseQueue: get_products_response
+createProductRoutingKey: create_product_routing_key
+getProductsRoutingKey: get_products_routing_key
+getProductsResponseRoutingKey: get_products_response_routing_key
+exchange: direct
